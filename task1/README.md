@@ -1,11 +1,17 @@
-# Intro to AI Course
+# Lab 1 - Image Uploader (Streamlit & Anvil)
 
-This repository contains labs, hints or assignments for the **Introduction to AI** course.  
-Each task is organized in its own folder (e.g., `task_1`, `task_2`, ...), with a separate README and implementation files.
+Ця лабораторна робота реалізує завантажувач зображень форматів `.jpg`, `.jpeg`, `.png`, `.webp` та їх візуалізацію. Реалізовано як базовий варіант за допомогою **Streamlit**, так і додатковий клієнт-серверний варіант на платформі **Anvil** (з використанням Anvil Uplink).
 
-## Structure
-- `task_1/` – Lab 1: Streamlit Image Uploader
-- More tasks will be added as the course progresses.
+## Структура файлів
 
-## How to Run Labs
-Navigate into a task folder and follow the instructions in its README.  
+* `app.py` — базова версія інтерфейсу на Streamlit із кастомним оформленням фону.
+* `app_anvil.py` — серверний скрипт на Python, що підключається через Anvil Uplink для перевірки та обробки завантажених файлів.
+* `requirements.txt` — перелік необхідних бібліотек для роботи обох застосунків.
+* `results.pdf` — звіт із демонстрацією роботи та скріншотами.
+
+## Інструкція із запуску
+
+### Варіант 1: Streamlit
+1. Встановіть залежності:
+   ```bash
+   pip install -r requirements.txt
